@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper_app_blank"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/app_name"
+        android:textSize="45sp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:background="@drawable/round_corner"
+        android:layout_height="45dp"
+        android:layout_marginTop="60dp"
+        android:hint="@string/enter_email"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:background="@drawable/round_corner"
+        android:layout_height="45dp"
+        android:layout_marginTop="23dp"
+        android:hint="הכנס סיסמא"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_marginTop="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/my_button_bg"
+        android:layout_gravity="center"
+        android:text="רוץ!!!" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/my_button_bg"
+        android:ems="10"
+        android:text="ליצור משתמש חדש"
+        />
+    <TextView
+        android:id="@+id/tvBtn_forget_password"
+        android:layout_marginTop="23dp"
+        android:text="שחכתי סיסמא"
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true">
+
+    </TextView>
+
+</LinearLayout>

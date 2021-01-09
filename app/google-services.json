@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "457521386772",
+    "firebase_url": "https://tzuna80-6017f.firebaseio.com",
+    "project_id": "tzuna80-6017f",
+    "storage_bucket": "tzuna80-6017f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457521386772:android:d0adaa6ebfa818361e5e01",
+        "android_client_info": {
+          "package_name": "com.example.a80"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457521386772-e5te4l3fh4vt8tpbji74l84j75j9fn9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB1jjWCEKYXUspIgiqnKWKABPWoAz9aSc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457521386772-e5te4l3fh4vt8tpbji74l84j75j9fn9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

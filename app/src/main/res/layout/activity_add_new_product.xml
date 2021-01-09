@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper_app_blank"
+
+    tools:context=".AddNewProduct">
+
+    <TextView
+        android:id="@+id/storage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/storage"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="153dp" />
+    <TextView
+        android:id="@+id/tv_description_storage"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="כאן ניתן להוסיף למאגר, מוצרים עם הערך התזונתי שלהם"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="153dp" />
+
+    <TextView
+        android:id="@+id/tv_100gram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:text="ערך תזונתי ל100 גרם מוצר:"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="153dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:weightSum="4">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/tv_nameProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="שם מוצר"
+                android:layout_marginTop="15dp"
+                tools:layout_editor_absoluteX="116dp"
+                tools:layout_editor_absoluteY="153dp" />
+            <TextView
+                android:id="@+id/tv_cal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="קלוריות"
+                android:layout_marginTop="15dp"
+                tools:layout_editor_absoluteX="116dp"
+                tools:layout_editor_absoluteY="153dp" />
+            <TextView
+                android:id="@+id/tv_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="חלבונים"
+                android:layout_marginTop="25dp"
+
+                tools:layout_editor_absoluteX="116dp"
+                tools:layout_editor_absoluteY="153dp" />
+            <TextView
+                android:id="@+id/tv_carb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="פחמימות"
+                android:layout_marginTop="25dp"
+
+                tools:layout_editor_absoluteX="116dp"
+                tools:layout_editor_absoluteY="153dp" />
+            <TextView
+                android:id="@+id/tv_sugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="מתוכם סוכרים "
+                android:layout_marginTop="25dp"
+
+                tools:layout_editor_absoluteX="116dp"
+                tools:layout_editor_absoluteY="153dp" />
+            <TextView
+                android:id="@+id/tv_fat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="שומן"
+                android:layout_marginTop="25dp"
+
+                tools:layout_editor_absoluteX="116dp"
+                tools:layout_editor_absoluteY="153dp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <AutoCompleteTextView
+                android:background="@drawable/corner_2"
+
+                android:id="@+id/atv_all_products"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:hint="שם המוצר"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+
+
+            <EditText
+                android:id="@+id/et_cal"
+                android:background="@drawable/corner_2"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="0 קלוריות"
+                android:inputType="number"
+                tools:layout_editor_absoluteX="123dp"
+                tools:layout_editor_absoluteY="331dp" />
+            <EditText
+                android:id="@+id/et_pro"
+                android:background="@drawable/corner_2"
+                android:layout_marginTop="19dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="0 גרם"
+
+                android:inputType="number"
+                tools:layout_editor_absoluteX="123dp"
+                tools:layout_editor_absoluteY="331dp" />
+            <EditText
+                android:id="@+id/et_carb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="0 גרם"
+                android:background="@drawable/corner_2"
+                android:layout_marginTop="19dp"
+
+                android:inputType="number"
+                tools:layout_editor_absoluteX="123dp"
+                tools:layout_editor_absoluteY="331dp" />
+            <EditText
+                android:id="@+id/et_sugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="0 גרם"
+                android:background="@drawable/corner_2"
+                android:layout_marginTop="19dp"
+
+                android:inputType="number"
+                tools:layout_editor_absoluteX="123dp"
+                tools:layout_editor_absoluteY="331dp" />
+            <EditText
+                android:id="@+id/et_fat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:background="@drawable/corner_2"
+                android:layout_marginTop="19dp"
+
+                android:hint="0 גרם"
+                android:inputType="number"
+                tools:layout_editor_absoluteX="123dp"
+                tools:layout_editor_absoluteY="331dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_add_new_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/my_button_bg"
+            android:layout_margin="10dp"
+
+            android:text="הוסף מוצר" />
+        <Button
+            android:id="@+id/btn_load_new_product"
+            android:layout_width="match_parent"
+            android:background="@drawable/my_button_bg"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+
+            android:layout_height="wrap_content"
+            android:text="טען מוצר" />
+        <Button
+            android:id="@+id/btn_delete_product"
+            android:layout_width="match_parent"
+            android:background="@drawable/my_button_bg"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+
+            android:layout_height="wrap_content"
+            android:text="למחוק מוצר" />
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

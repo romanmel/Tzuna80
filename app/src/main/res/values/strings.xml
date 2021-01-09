@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">תזונה80%</string>
+    <string name="hint_age">הכנס גיל</string>
+    <string name="hint_name">הכנס שם</string>
+    <string name="hint_weight">הכנס משקל</string>
+    <string name="hint_height">הכנס גובה</string>
+    <string name="enter_email">הכנס דואר אלקטרוני</string>
+    <string name="email">Melamed_0@hotmail.com</string>
+    <string name="male">גבר</string>
+    <string name="storage_explain" tools:ignore="StringEscaping">על מנת להוסיף מוצר כלשהו לתפריט עלייך קודם כל להכניס את המוצר למאגר המוצרים ולאחר מכן לבחור את המוצר שצץ מתוך הלשונית של "שם מוצר" בעמוד זה</string>
+    <string name="loading_name">טוען שם</string>
+    <string name="loading_values">טוען נתונים</string>
+    <string name="female">אישה</string>
+    <string name="next" translatable="false">הבא/עדכן</string>
+    <string name="change_values">עידכון נתונים</string>
+    <string name="exit">יציאה</string>
+    <string name="textview">TextView</string>
+    <string name="hello">שלום! אני יועץ התזונה שלך בהתאם לנתונים שנתתה לי אני חישבתי לך את הBMI ואת הBMR:</string>
+    <string name="prompt_email">דואר אלקטרוני</string>
+    <string name="prompt_password">סיסמא</string>
+    <string name="action_sign_in">להתחבר או להירשם</string>
+    <string name="action_sign_in_short">להתחבר</string>
+    <string name="welcome">"ברוכים הבאים!"</string>
+    <string name="storage">"מאגר מוצרים"</string>
+    <string name="add_new_menu_product">"הוסף מוצר מתוך המאגר לתפריט"</string>v
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="atv_menu_products">"שם מוצר"</string>v
+    <string name="first_storage">""[{\"name\":\"לחם שחור פרוס אחיד\",\"cal\":\"298\",\"carb\":\"56\",\"protein\":\"10\",\"fat\":\"25\",\"sugar\":\"3\"},{\"name\":\"גבינה לבנה תנובה\",\"cal\":\"82\",\"carb\":\"4\",\"protein\":\"10\",\"fat\":\"3\",\"sugar\":\"4\"},{\"name\":\"חמאה תנובה\",\"cal\":\"734\",\"carb\":\"1\",\"protein\":\"1\",\"fat\":\"81\",\"sugar\":\"0\"},{\"name\":\"חלב תנובה\",\"cal\":\"60\",\"carb\":\"5\",\"protein\":\"3\",\"fat\":\"3\",\"sugar\":\"5\"},{\"name\":\"טונה בשמן צמחי\",\"cal\":\"145\",\"carb\":\"0\",\"protein\":\"28\",\"fat\":\"4\",\"sugar\":\"0\"},{\"name\":\"פסטה לפני בישול רמי לוי\",\"cal\":\"357\",\"carb\":\"74\",\"protein\":\"11\",\"fat\":\"1\",\"sugar\":\"0\"},{\"name\":\"אורז פרסי לפני בישול שופרסל\",\"cal\":\"331\",\"carb\":\"73\",\"protein\":\"7\",\"fat\":\"0\",\"sugar\":\"0\"}]""</string>v
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper_app_blank"
+    tools:context=".HelloUser">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/loading_name"
+            android:textSize="19sp" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            tools:ignore="NestedWeights">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_weight="3"
+    android:orientation="horizontal"
+    tools:ignore="NestedWeights">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="הנתונים שלי"
+                    android:layout_gravity="center"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:padding="3dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading_values"
+                    android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_BMR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="0dp"
+                        android:text="...טוען" />
+                        <TextView
+                            android:id="@+id/tv_EMR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="0dp"
+                            android:text="...טוען" />
+                        <TextView
+                            android:id="@+id/tv_menu_calories"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="...טוען"
+                            android:textStyle="bold" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="?android:attr/listDivider" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:paddingTop="1dp"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="0dp"
+                                        android:text="מה זה?" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <Button
+                                        android:id="@+id/btn_BMRinfo"
+                                        android:layout_width="wrap_content"
+                                        android:background="@drawable/ic_chat_bubble_black_24dp"
+                                        android:text="BMR"
+                                        android:layout_weight="1"
+                                        android:layout_margin="1dp"
+                                        android:textStyle="italic"
+                                        android:textColorHighlight="@color/red"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:layout_height="wrap_content"/>
+                                    <Button
+                                        android:id="@+id/btn_BMIinfo"
+                                        android:text="BMI"
+                                        android:textStyle="italic"
+                                        android:layout_weight="1"
+                                        android:layout_margin="1dp"
+                                        android:textColorHighlight="@color/red"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:layout_width="wrap_content"
+                                        android:background="@drawable/ic_chat_bubble_black_24dp"
+                                        android:layout_height="wrap_content"/>
+                                    <Button
+                                        android:id="@+id/btn_EMRinfo"
+                                        android:text="EMR"
+                                        android:layout_weight="1"
+                                        android:layout_margin="1dp"
+                                        android:textStyle="italic"
+                                        android:textColorHighlight="@color/red"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:layout_width="wrap_content"
+                                        android:background="@drawable/ic_chat_bubble_black_24dp"
+                                        android:layout_height="wrap_content"/>
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="5dp"
+                                        android:background="?android:attr/listDivider" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_gravity="center"
+
+                                        android:orientation="vertical">
+                                        <Button
+                                            android:id="@+id/btn_Zigma"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/ic_whatshot_black_24dp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="הראה מאזן קלורי"
+                                            android:layout_gravity="center"
+                                            android:foregroundGravity="center"
+
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_gravity="center"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <Button
+                                            android:id="@+id/btn_tip1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/ic_fitness_center_black_24dp" />
+                                        <TextView
+                                            android:gravity="center"
+                                            android:textStyle="bold"
+                                            android:layout_gravity="center"
+                                            android:foregroundGravity="center"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="טיפ לחיטוב"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </LinearLayout>v
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_height="match_parent"
+                                android:background="?android:attr/listDivider" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:orientation="horizontal">
+
+                                <include layout="@layout/bar_chart_xml_ui_1"
+                                    tools:ignore="TooDeepLayout" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="?android:attr/listDivider" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_bmi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="bmi"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tv_fat_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:text="@string/loading_values"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/graph"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:outlineSpotShadowColor="@color/red"
+        android:background="?android:attr/listDivider" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/my_button_bg"
+        android:text="בניית תפריט יומי" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_button_bg"
+        android:text="@string/change_values" />
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_button_bg"
+        android:text="התנתק" />
+</LinearLayout>
+
+
+
+
+</LinearLayout>

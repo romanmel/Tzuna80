@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper_app_blank"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+
+            android:text="פרטים אישיים"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="270dp"
+            android:layout_marginTop="4dp"
+            android:layout_height="3dp"
+            android:background="?android:attr/listDivider" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+           android:text="בחר מין"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_female"
+            android:layout_width="116dp"
+            android:layout_height="125dp"
+            android:layout_weight="1"
+
+            android:layout_marginLeft="50dp"
+
+            android:background="@drawable/woman"
+            android:text="@string/female"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="50dp" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_male"
+            android:layout_width="103dp"
+            android:layout_height="128dp"
+            android:background="@drawable/man"
+            android:layout_weight="1"
+            android:layout_marginLeft="50dp"
+            android:text="@string/male"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="350dp"
+            android:layout_height="3dp"
+            android:background="?android:attr/listDivider" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner"
+            android:layout_marginTop="10dp"
+            android:padding="7dp"
+            android:layout_gravity="center"
+
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:hint="@string/hint_name"
+            android:inputType="textPersonName"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/tv_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:text="שינוי נתונים " />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:textSize="30sp"
+                android:text="גיל"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="37dp"
+                android:textSize="30sp"
+
+                android:text="גובה"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:textSize="30sp"
+                android:layout_marginTop="5dp"
+
+                android:text="משקל"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="6dp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/et_age"
+                android:background="@drawable/round_corner"
+                android:layout_width="100dp"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:textAlignment="center"
+                android:hint="@string/hint_age"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/et_height"
+                android:textAlignment="center"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_corner"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:autofillHints=""
+                android:hint="@string/hint_height"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/et_weight"
+                android:textAlignment="center"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_corner"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:hint="@string/hint_weight"
+                android:inputType="numberDecimal" />
+
+    </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="15dp">
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_button_bg"
+        android:text="@string/next"
+        android:layout_marginRight="50dp"
+       />
+    <View
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_button_bg"
+        android:text="@string/exit" />
+
+</LinearLayout>
+
+
+
+</LinearLayout>

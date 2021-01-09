@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/EmrValue"
+            android:layout_width="wrap_content"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="EMR"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
+        <View
+
+            android:layout_width="15dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#ff00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:gravity="left"
+            android:id="@+id/MenuValue"
+            android:text="תפריט"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/viewEMR"
+            android:layout_width="25dp"
+            android:layout_height="10pt"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/graph_corner" />
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#ff00" />
+
+        <View
+            android:id="@+id/viewSumCalories"
+            android:layout_weight="1"
+            android:layout_width="25dp"
+            android:layout_height="10pt"
+            android:layout_gravity="bottom"
+            android:background="@drawable/graph_corner" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMR"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:background="#ff00" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="תפריט"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

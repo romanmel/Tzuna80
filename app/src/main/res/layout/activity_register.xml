@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper_app_blank"
+
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:textSize="45sp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="הרשמה" />
+    <EditText
+        android:id="@+id/editText2"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:background="@drawable/round_corner"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:hint="הכנס שם פרטי בעברית"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:foregroundGravity="center"
+        android:layout_width="wrap_content"
+        android:background="@drawable/round_corner"
+        android:gravity="center"
+
+        android:layout_height="45dp"
+        android:layout_marginTop="23dp"
+        android:hint="הכנס דואר אלקטרוני"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:background="@drawable/round_corner"
+        android:layout_height="45dp"
+        android:layout_marginTop="23dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:hint="הכנס סיסמא"
+        android:ems="10"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:background="@drawable/round_corner"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_marginTop="23dp"
+        android:layout_gravity="center"
+        android:hint="הכנס סיסמא שנית"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_marginTop="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:background="@drawable/my_button_bg"
+
+        android:text="ליצור משתמש חדש" />
+
+</LinearLayout>
