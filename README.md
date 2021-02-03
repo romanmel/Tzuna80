@@ -8,9 +8,9 @@ repeat connection - load the  user.json file from the internal memory device and
 <img src="https://user-images.githubusercontent.com/55783449/106728199-e5759700-6614-11eb-9645-784a15dec89d.jpg" alt="Splash Activity" width="200" height="415">
 
 
-Personal Data Activity - Create or load exist User.json file and you 
-choose the gender of user (Male/Female)
-age, height, weight.
+Personal Data Activity - Create or load exist User.json file and you have the option to 
+choose the gender of the user (Male/Female)
+the age, height and the  weight.
 
 <img src="https://user-images.githubusercontent.com/55783449/106730903-8d8c5f80-6617-11eb-8398-c409328c6f61.jpg" alt="Splash Activity" width="200" height="415">
 
