@@ -2,6 +2,7 @@
 # An android application that help you maintain your nutrition.
 Splash Activity - to loading saved data on device
 youre first connection - go to Personal Data Activity and create user.json  file with the current parameters and save if in internal device storage.
+
 repeat connection - load the  user.json file from the internal memory device and go to Main Activity.
 
 <img src="https://user-images.githubusercontent.com/55783449/106728199-e5759700-6614-11eb-9645-784a15dec89d.jpg" alt="Splash Activity" width="200" height="415">
